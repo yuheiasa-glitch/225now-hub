@@ -11,39 +11,43 @@ st.set_page_config(
 # -------------------------------------------------
 # Style (Black background, White & Orange)
 # -------------------------------------------------
-st.markdown("""
-<style>
-html, body, [class*="css"] {
-    background-color: #000000;
-    color: #FFFFFF;
-}
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #000000;
+        color: #FFFFFF;
+    }
 
-.block-container {
-    max-width: 720px;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
+    .block-container {
+        max-width: 720px;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
 
-h1, h2, h3, p, li {
-    color: #FFFFFF;
-}
+    h1, h2, h3, p, li, div {
+        color: #FFFFFF;
+    }
 
-a {
-    color: #FF8C00 !important;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-</style>
-""", unsafe_allow_html=True)
+    a {
+        color: #FF8C00 !important;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 # -------------------------------------------------
 # Content
 # -------------------------------------------------
 st.title("特定商取引法に基づく表記")
 
-st.markdown("""
+st.markdown(
+    """
 **販売事業者名**  
 合同会社225NOW  
 
@@ -82,7 +86,10 @@ st.markdown("""
 **表現および商品に関する注意書き**  
 本サービスは投資助言を目的としたものではありません。  
 特定の金融商品、投資手法、または投資成果を保証するものではありません。
-""")
+"""
+)
 
 st.markdown("---")
+
+# Homeリンク（ここが重要）
 st.markdown("[← Back to Home](/)")
