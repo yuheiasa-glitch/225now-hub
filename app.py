@@ -134,9 +134,8 @@ st.markdown("<hr>", unsafe_allow_html=True)
 # Legal
 # -------------------------------------------------
 st.markdown("### Legal")
-st.markdown(
-    "[Specified Commercial Transactions Act](/tokusho)"
-)
+st.page_link("pages/tokusho.py", label="Specified Commercial Transactions Act")
+
 
 # -------------------------------------------------
 # Footer
